@@ -1,0 +1,89 @@
+.nav-links{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    background: #fff;
+    width: 250px;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+/* nav ul li{
+    margin: 10px 0 0 10px;
+} */
+
+.logo{
+    background-color: rgba(77, 181, 255, 0.4);;
+    text-align: center;
+    display: flex;
+    transition: all 0.5s ease;
+    /* margin: 0 0 0 10px; */
+}
+
+.logo img{
+    width: 65px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.logo span{
+    font-weight: bold;
+    padding: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+a{
+    position: relative;
+    color: rgb(85, 83, 83);
+    font-size: 17px;
+    display: table;
+    width: 300px;
+    padding: 15px;
+}
+
+.icon-nav{
+    position: relative;
+    width: 40px;
+    height: 20px;
+    top: 4px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.nav-item{
+    position: relative;
+    /* top: 12px; */
+    margin-left: 10px;
+}
+
+li a:hover{
+    background-color: #eee;
+    color: rgb(77, 181, 255);
+    padding: 23px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.nav-links:hover{
+    width: 255px;
+    transition: all 0.5s ease;
+}
+
+@media screen and (max-width: 768px) {
+    nav .nav-links{
+        width: 80px;
+    }
+    .nav-links:hover{
+        width: 200px;
+        transition: all 0.5s ease;
+    }
+    .logo img{
+        width: 45px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    
+}
