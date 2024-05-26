@@ -1,16 +1,24 @@
+.search-container {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    width: 100%; /* Ensure the container takes the full width */
+  }
+
 .search_box{
+    
     height: 50px;
     width: 400px;
     margin-top: 2rem;
-    margin-left: 45%;
+    margin: auto 10px;
     display: flex;
     cursor: pointer;
-    padding: 20px 20px;
+    padding: 20px;
     background: #fff;
     border-radius: 30px;
     align-items: center;
     justify-content: center;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    transition: width 0.8s;
 }
 
 .search_box:hover input{
@@ -24,7 +32,7 @@
     outline: none;
     border: none;
     font-weight: 500;
-    transition: 0.8s;
+    transition: width 0.8s;
     background: transparent;
     color: rgb(85, 83, 83);
     font-size: 1rem;
@@ -33,7 +41,7 @@
 }
 
 .search-icon{
-    padding: auto;
+    /* padding: auto; */
     color: rgb(77, 181, 255);
     font-size: 23px;
 }

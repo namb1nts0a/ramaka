@@ -5,11 +5,13 @@ import "./searchBar.css"
 
 const SearchBar = () => {
     return(
-        <div className="search_box">
-            <input type="text" placeholder="Search..." />
-            <a href="">
-                <FaSearchLocation className="search-icon"/>
-            </a>
+        <div className="search-container">
+            <div className="search_box">
+                <input type="text" placeholder="Search..." />
+                <a href="">
+                    <FaSearchLocation className="search-icon"/>
+                </a>
+            </div>
         </div>
     )
 }

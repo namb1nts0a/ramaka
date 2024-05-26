@@ -1,0 +1,40 @@
+.leaflet-container{
+    height: 600px;
+    width: 100%;
+    /* left: 18rem; */
+    margin-top: 20px;
+    /* display: flex; */
+}
+
+
+
+/* import React from "react";
+import { MapContainer, Marker, Popup, TileLayer } from "react-leaflet";
+
+function Map() {
+  return (
+    <MapContainer
+      center={[-21.454711198778288, 47.089718423995954]}
+      zoom={10}
+      style={{
+        position: "absolute",
+        top: "58px",
+        right: 0,
+        bottom: 0,
+        left: 0,
+      }}
+    >
+      <TileLayer
+        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        url="https://api.maptiler.com/maps/outdoor-v2/256/{z}/{x}/{y}.png?key=brU7soyaaFE6GXysfqkz"
+      />
+      <Marker position={[51.505, -0.09]}>
+        <Popup>
+          A pretty CSS3 popup. <br /> Easily customizable.
+        </Popup>
+      </Marker>
+    </MapContainer>
+  );
+}
+
+export default Map; */

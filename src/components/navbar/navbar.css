@@ -1,30 +1,37 @@
 .nav-links{
-    position: absolute;
+    position: relative;
     top: 0;
     bottom: 0;
     height: 100%;
-    left: 0;
     background: #fff;
     width: 250px;
     overflow: hidden;
-    transition: width 0.2s linear;
+    transition: width 0.3s linear;
     box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
 }
-/* nav ul li{
-    margin: 10px 0 0 10px;
-} */
+
+.nav-links.collapsed{
+    width: 80px;
+}
+.nav-links.collapsed .logo img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .logo{
     background-color: rgba(77, 181, 255, 0.4);;
     text-align: center;
     display: flex;
+    align-items: center;
+    cursor: pointer;
     transition: all 0.5s ease;
     /* margin: 0 0 0 10px; */
 }
 
 .logo img{
-    width: 65px;
-    height: 60px;
+    width: 45px;
+    height: 40px;
     border-radius: 50%;
 }
 
@@ -35,12 +42,12 @@
     text-transform: uppercase;
 }
 
-a{
+.nav-links a{
     position: relative;
     color: rgb(85, 83, 83);
     font-size: 17px;
     display: table;
-    width: 300px;
+    width: 100%;
     padding: 15px;
 }
 
@@ -48,7 +55,7 @@ a{
     position: relative;
     width: 40px;
     height: 20px;
-    top: 4px;
+    /* top: 4px; */
     font-size: 30px;
     text-align: center;
 }
@@ -65,25 +72,27 @@ li a:hover{
     padding: 23px;
     font-weight: bold;
     font-size: 15px;
-}
-
-.nav-links:hover{
-    width: 255px;
-    transition: all 0.5s ease;
-}
-
-@media screen and (max-width: 768px) {
-    nav .nav-links{
-        width: 80px;
-    }
-    .nav-links:hover{
-        width: 200px;
-        transition: all 0.5s ease;
-    }
-    .logo img{
-        width: 45px;
-        height: 40px;
-        border-radius: 50%;
-    }
     
 }
+
+.nav-links.collapsed:hover{
+    width: 100px;
+    transition: all 0.5s ease;
+}
+@media screen and (max-width: 768px) {
+    .nav-links {
+      width: 170px;
+    }
+    .nav-links:hover {
+      width: 200px;
+      transition: all 0.5s ease;
+    }
+    .logo img {
+      width: 45px;
+      height: 40px;
+      border-radius: 50%;
+    }
+    /* .nav-item{
+        display: none;
+    } */
+  }
