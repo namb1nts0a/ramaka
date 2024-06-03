@@ -3,6 +3,7 @@ import Navbar from "./components/navbar/Navbar";
 import SearchBar from "./components/searchBar/SearchBar";
 import Maps from "./components/maps/Maps";
 import Contact from "./components/contact/Contact";
+import FastFoodList from "./components/FastFoodList/FastFoodList";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         </div>
         <Contact/>
       </div>
+      <FastFoodList />
     </>
   );
 }
