@@ -45,3 +45,10 @@
     color: rgb(77, 181, 255);
     font-size: 23px;
 }
+
+@media screen and (max-width: 425px) {
+    .search_box{
+        height: 40px;
+        width: 300px;
+    }
+}

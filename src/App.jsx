@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./components/navbar/Navbar";
 import SearchBar from "./components/searchBar/SearchBar";
 import Maps from "./components/maps/Maps";
+import Contact from "./components/contact/Contact";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
           <SearchBar/>
           <Maps/>
         </div>
+        <Contact/>
       </div>
     </>
   );

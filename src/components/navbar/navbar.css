@@ -7,7 +7,7 @@
     width: 250px;
     overflow: hidden;
     transition: width 0.3s linear;
-    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    box-shadow: 20px 10px 15px rgba(0, 0, 0, 0.1);
 }
 
 .nav-links.collapsed{
