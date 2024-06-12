@@ -7,9 +7,11 @@ import { getFastFood } from '../../services/api'
 import PopopFast from './PopupFast'
 import L from 'leaflet'
 import fastFoodIconImage from '../../assets/loca.png'
+import meLocate from '../../assets/me.png'
 import 'leaflet/dist/leaflet.css'
 import 'leaflet/dist/leaflet.js'
 import "./maps.css"
+import LocateButton from './LocateButton'
 
 const fastFoodIcon = new L.Icon({
   iconUrl : fastFoodIconImage,
@@ -18,9 +20,17 @@ const fastFoodIcon = new L.Icon({
   popupAnchor: [0, -32]
 })
 
+const meLoc = new L.Icon({
+  iconUrl : meLocate,
+  iconSize: [30, 32],
+  iconAnchor: [16, 32],
+  popupAnchor: [0, -32]
+})
+
 function Maps() {
   const [center, setCenter] = useState({lat: -21.454711198778288,lng:47.089718423995954})
   const [fastFoods, setFastFoods] = useState([])
+  const [userPosition, setUserPosition] = useState(null)
   const ZOOM_LEVEL = 14;
   const mapRef = useRef();
 
@@ -64,7 +74,14 @@ function Maps() {
               </Marker>
             )
           ))}
+          {userPosition && (
+            <Marker position={userPosition} icon={meLoc}>
+              <Popup>You are here</Popup>
+            </Marker>
+          )}
+          <LocateButton onLocate={setUserPosition} />
         </MapContainer>
+        
     </div>
   )
 }
